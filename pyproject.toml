@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "grokking-functional-programming"
+version = "0.1.0"
+description = ""
+authors = ["m7142yosuke <m7142yosuke@gmail.com>"]
+readme = "README.md"
+packages = [{include = "grokking_functional_programming"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^7.4.4"
+black = "^23.12.1"
+mypy = "^1.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

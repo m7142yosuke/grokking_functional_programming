@@ -9,8 +9,11 @@ def score(word: str) -> int:
 def pure_func_ranked_words(words: List[str], key: Callable[[str], int]) -> List[str]:
     return sorted(words, key=key, reverse=True)
 
+
 # memo:既存の値を変更する以下の関数は純粋関数ではない。
-def not_pure_func_ranked_words(words: List[str], key: Callable[[str], int]) -> List[str]:
+def not_pure_func_ranked_words(
+    words: List[str], key: Callable[[str], int]
+) -> List[str]:
     words.sort(key=key, reverse=True)
     return words
 

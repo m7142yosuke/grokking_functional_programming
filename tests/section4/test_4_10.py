@@ -42,7 +42,7 @@ def penalty(word: str) -> int:
     return 7 if "s" in word else 0
 
 
-def test_pure_func_ranked_words():
+def test_pure_func_ranked_words_v2():
     words = ["ada", "haskell", "scala", "java", "rust"]
     assert pure_func_ranked_words(
         words, lambda x: score(x) + bonus(x) - penalty(x)
